@@ -1,10 +1,10 @@
-//ÏîÄ¿Ãû³Æ£ºÍ¨Ñ¶Â¼»ù´¡°æ
-//´´½¨ÈÕÆÚ£º2026Äê/8ÔÂ/12ÈÕ 18:19·Ö
+ï»¿//é¡¹ç›®åç§°ï¼šé€šè®¯å½•åŸºç¡€ç‰ˆ
+//åˆ›å»ºæ—¥æœŸï¼š2026å¹´/8æœˆ/12æ—¥ 18:19åˆ†
 #include<iostream>
 using namespace std;
 int main()
 {
-	cout << "hello world!" << endl;
+	cout << "helloå“ˆå“ˆ world!" << endl;
 	system("pause");
 	return 0;
 }
