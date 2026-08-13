@@ -152,6 +152,7 @@
   <ItemGroup>
     <ClInclude Include="showmenu.h" />
     <ClInclude Include="addmember.h" />
+    <ClInclude Include="addressbooks.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
