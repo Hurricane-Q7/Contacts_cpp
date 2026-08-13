@@ -18,8 +18,22 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="showmenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="addmember.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="项目介绍.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="showmenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="addmember.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

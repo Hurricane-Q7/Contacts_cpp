@@ -19,7 +19,7 @@ struct addressbooks
 	struct Person personArray[MAX];
 	//用数组来存放通讯录成员的信息
 	int count_of_person;
-	//用来记录当前通讯录有多少人
+	//记录当前通讯录成员个数
 
 };
 int main()
@@ -50,9 +50,7 @@ int main()
 			system("pause");
 			break;
 		}
-		
 	}
-
 	system("pause");
 	return 0;
 }

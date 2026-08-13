@@ -139,6 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="addmember.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="showmenu.cpp" />
   </ItemGroup>
@@ -150,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="showmenu.h" />
+    <ClInclude Include="addmember.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
