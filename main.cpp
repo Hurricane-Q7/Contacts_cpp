@@ -21,6 +21,13 @@ int isExit(addressbooks* abs, string name)
 	}
 	return -1;
 }
+void clean_all_person(addressbooks*abs)
+{
+	abs->m_count = 0;
+	cout << "通讯录已经清空!" << endl;
+	system("pause");
+	system("cls");
+}
 int main()
 {
 	int input_user = 0;
@@ -94,6 +101,7 @@ int main()
 		}
 			break;
 		case 6:
+			clean_all_person(&abs);
 			break;
 		case 0:
 			cout << "欢迎下次使用！" << endl;
