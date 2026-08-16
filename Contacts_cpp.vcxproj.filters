@@ -24,6 +24,9 @@
     <ClCompile Include="addmember.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="showPerson.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="项目介绍.md" />
@@ -36,6 +39,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="addressbooks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="showPerson.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

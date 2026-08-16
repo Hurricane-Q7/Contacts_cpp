@@ -142,6 +142,7 @@
     <ClCompile Include="addmember.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="showmenu.cpp" />
+    <ClCompile Include="showPerson.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="项目介绍.md">
@@ -153,6 +154,7 @@
     <ClInclude Include="showmenu.h" />
     <ClInclude Include="addmember.h" />
     <ClInclude Include="addressbooks.h" />
+    <ClInclude Include="showPerson.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,6 +3,7 @@
 #include"showmenu.h"
 #include"addmember.h"
 #include"addressbooks.h"
+#include"showPerson.h"
 #define MAX 1000 //通讯录最多存储一千人的信息
 
 int main()
@@ -21,6 +22,7 @@ int main()
 			addmember(&abs);
 			break;
 		case 2:
+			showperson(&abs);
 			break;
 		case 3:
 			break;
