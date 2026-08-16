@@ -144,6 +144,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="showmenu.cpp" />
     <ClCompile Include="showPerson.cpp" />
+    <ClCompile Include="findPerson.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="项目介绍.md">
@@ -152,6 +153,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="findPerson.h" />
     <ClInclude Include="showmenu.h" />
     <ClInclude Include="addmember.h" />
     <ClInclude Include="addressbooks.h" />

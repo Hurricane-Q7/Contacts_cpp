@@ -5,6 +5,7 @@
 #include"addressbooks.h"
 #include"showPerson.h"
 #include"deletPerson.h"
+#include"findPerson.h"
 #define MAX 1000 //通讯录最多存储一千人的信息
 int isExit(addressbooks* abs, string name)
 {
@@ -56,6 +57,22 @@ int main()
 		}
 			break;
 		case 4:
+		{
+			cout << "请输入要查找联系人的姓名：" << endl;
+			string name;
+			cin >> name;
+			int ret_value = isExit(&abs, name);
+			if (ret_value != -1)
+			{
+				findperson(&abs,ret_value);
+			}
+			else
+			{
+				cout << "查无此人！" << endl;
+			}
+			system("pause");
+			system("cls");
+		}
 			break;
 		case 5:
 			break;
