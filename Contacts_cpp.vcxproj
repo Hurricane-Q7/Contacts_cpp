@@ -142,6 +142,7 @@
     <ClCompile Include="addmember.cpp" />
     <ClCompile Include="deletPerson.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="modifyPerson.cpp" />
     <ClCompile Include="showmenu.cpp" />
     <ClCompile Include="showPerson.cpp" />
     <ClCompile Include="findPerson.cpp" />
@@ -154,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="findPerson.h" />
+    <ClInclude Include="modifyPerson.h" />
     <ClInclude Include="showmenu.h" />
     <ClInclude Include="addmember.h" />
     <ClInclude Include="addressbooks.h" />
