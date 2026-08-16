@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="addmember.cpp" />
+    <ClCompile Include="deletPerson.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="showmenu.cpp" />
     <ClCompile Include="showPerson.cpp" />
@@ -155,6 +156,7 @@
     <ClInclude Include="addmember.h" />
     <ClInclude Include="addressbooks.h" />
     <ClInclude Include="showPerson.h" />
+    <ClInclude Include="deletPerson.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

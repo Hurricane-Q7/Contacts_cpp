@@ -2,7 +2,6 @@
 #include <string>
 using namespace std;
 #define MAX 1000
-
 struct Person
 {
     string name;
@@ -11,7 +10,6 @@ struct Person
     string tele_number;
     string address;
 };
-
 struct addressbooks
 {
     Person personArray[MAX];

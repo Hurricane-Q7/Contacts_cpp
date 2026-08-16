@@ -4,8 +4,21 @@
 #include"addmember.h"
 #include"addressbooks.h"
 #include"showPerson.h"
+#include"deletPerson.h"
 #define MAX 1000 //通讯录最多存储一千人的信息
-
+int isExit(addressbooks* abs, string name)
+{
+	int i = 0;
+	//有人return 该人在数组中的编号
+	for (i = 0; i < abs->m_count; i++)
+	{
+		if (abs->personArray[i].name == name)
+		{
+			return i;
+		}
+	}
+	return -1;
+}
 int main()
 {
 	int input_user = 0;
@@ -25,6 +38,22 @@ int main()
 			showperson(&abs);
 			break;
 		case 3:
+		{
+			cout << "请输入要删除的姓名：" << endl;
+			string name;
+			cin >> name;
+			int ret_value = isExit(&abs, name);
+			if (ret_value != -1)
+			{
+				deletperson(&abs,ret_value);
+			}
+			else
+			{
+				cout << "查无此人！" << endl;
+			}
+			system("pause");
+			system("cls");
+		}
 			break;
 		case 4:
 			break;

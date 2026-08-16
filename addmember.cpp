@@ -39,7 +39,6 @@ void addmember( addressbooks * abs)
 	abs->personArray[abs->m_count].address = address;
 
 	abs->m_count++;
-
 	cout << "Ìí¼Ó³É¹¦£¡" << endl;
 	system("pause");
 	system("cls");
