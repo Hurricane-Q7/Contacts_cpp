@@ -8,6 +8,16 @@
 #include"findPerson.h"
 #include"modifyPerson.h"
 #define MAX 1000 //通讯录最多存储一千人的信息
+enum
+{
+	addPerson = 1,
+	showPerson,
+	deletPerson,
+	findPerson,
+	modifyPerson,
+	cleanPerson,
+	exitContacts,
+};
 int isExit(addressbooks* abs, string name)
 {
 	int i = 0;
@@ -40,13 +50,13 @@ int main()
 		cin >> input_user;
 		switch (input_user)
 		{
-		case 1:
+		case addPerson:
 			addmember(&abs);
 			break;
-		case 2:
+		case showPerson:
 			showperson(&abs);
 			break;
-		case 3:
+		case deletPerson:
 		{
 			cout << "请输入要删除的姓名：" << endl;
 			string name;
@@ -64,7 +74,7 @@ int main()
 			system("cls");
 		}
 			break;
-		case 4:
+		case findPerson:
 		{
 			cout << "请输入要查找联系人的姓名：" << endl;
 			string name;
@@ -82,7 +92,7 @@ int main()
 			system("cls");
 		}
 			break;
-		case 5:
+		case modifyPerson:
 		{
 			cout << "请输入要修改联系人的姓名：" << endl;
 			string name;
@@ -100,10 +110,10 @@ int main()
 			system("cls");
 		}
 			break;
-		case 6:
+		case cleanPerson:
 			clean_all_person(&abs);
 			break;
-		case 0:
+		case exitContacts:
 			cout << "欢迎下次使用！" << endl;
 			system("pause");
 			break;
