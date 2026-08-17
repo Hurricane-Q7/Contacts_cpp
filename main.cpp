@@ -7,30 +7,20 @@
 #include"deletPerson.h"
 #include"findPerson.h"
 #include"modifyPerson.h"
+#include"isExit.h"
 #define MAX 1000 //通讯录最多存储一千人的信息
+//增加枚举常量，提升代码的可读性
 enum
 {
-	addPerson = 1,
-	showPerson,
-	deletPerson,
-	findPerson,
-	modifyPerson,
-	cleanPerson,
-	exitContacts,
+	AddPerson = 1,
+	ShowPerson,
+	DeletPerson,
+	FindPerson,
+	ModifyPerson,
+	CleanPerson,
+	ExitContacts,
 };
-int isExit(addressbooks* abs, string name)
-{
-	int i = 0;
-	//有人return 该人在数组中的编号
-	for (i = 0; i < abs->m_count; i++)
-	{
-		if (abs->personArray[i].name == name)
-		{
-			return i;
-		}
-	}
-	return -1;
-}
+
 void clean_all_person(addressbooks*abs)
 {
 	abs->m_count = 0;
@@ -46,74 +36,29 @@ int main()
 	while (true)
 	{
 		showMenu();
-		cout << "待输入选项：";
+		cout << "待输入选项:>";
 		cin >> input_user;
 		switch (input_user)
 		{
-		case addPerson:
+		case AddPerson:
 			addmember(&abs);
 			break;
-		case showPerson:
+		case ShowPerson:
 			showperson(&abs);
 			break;
-		case deletPerson:
-		{
-			cout << "请输入要删除的姓名：" << endl;
-			string name;
-			cin >> name;
-			int ret_value = isExit(&abs, name);
-			if (ret_value != -1)
-			{
-				deletperson(&abs,ret_value);
-			}
-			else
-			{
-				cout << "查无此人！" << endl;
-			}
-			system("pause");
-			system("cls");
-		}
+		case DeletPerson:
+			deletperson(&abs);
 			break;
-		case findPerson:
-		{
-			cout << "请输入要查找联系人的姓名：" << endl;
-			string name;
-			cin >> name;
-			int ret_value = isExit(&abs, name);
-			if (ret_value != -1)
-			{
-				findperson(&abs,ret_value);
-			}
-			else
-			{
-				cout << "查无此人！" << endl;
-			}
-			system("pause");
-			system("cls");
-		}
+		case FindPerson:
+			findperson(&abs);
 			break;
-		case modifyPerson:
-		{
-			cout << "请输入要修改联系人的姓名：" << endl;
-			string name;
-			cin >> name;
-			int ret_value = isExit(&abs, name);
-			if (ret_value != -1)
-			{
-				modifyperson(&abs, ret_value);
-			}
-			else
-			{
-				cout << "查无此人！" << endl;
-			}
-			system("pause");
-			system("cls");
-		}
+		case ModifyPerson:
+			modifyperson(&abs);
 			break;
-		case cleanPerson:
+		case CleanPerson:
 			clean_all_person(&abs);
 			break;
-		case exitContacts:
+		case ExitContacts:
 			cout << "欢迎下次使用！" << endl;
 			system("pause");
 			break;

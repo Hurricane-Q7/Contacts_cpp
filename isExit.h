@@ -1,6 +1,6 @@
 #pragma once
 #include<iostream>
-#include"addressbooks.h"
 #include"isExit.h"
+#include"addressbooks.h"
 using namespace std;
-void deletperson(addressbooks* abs);
+int isExit(addressbooks* abs, string name);

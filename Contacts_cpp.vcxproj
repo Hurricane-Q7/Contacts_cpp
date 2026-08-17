@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="addmember.cpp" />
     <ClCompile Include="deletPerson.cpp" />
+    <ClCompile Include="isExit.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="modifyPerson.cpp" />
     <ClCompile Include="showmenu.cpp" />
@@ -155,6 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="findPerson.h" />
+    <ClInclude Include="isExit.h" />
     <ClInclude Include="modifyPerson.h" />
     <ClInclude Include="showmenu.h" />
     <ClInclude Include="addmember.h" />
